@@ -110,45 +110,16 @@
       "tag": "DIRECT"
     },
     {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova_proxy nova-falcon-bridge-152e.vpnsubpanel.workers.dev:443 [VLESS]",
+      "type": "shadowsocks",
+      "tag": "سرویس رایگان نوا @irnova_proxy nova-falcon-bridge-152e.vpnsubpanel.workers.dev:443 [SS]",
       "server": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev",
       "server_port": 443,
-      "uuid": "62bf77c8-8a36-482a-8112-165b527a874b",
-      "transport": {
-        "path": "/proxyip=82.26.198.89",
-        "type": "ws",
-        "headers": {
-          "Host": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "سرویس رایگان نوا @irnova_proxy 162.159.40.64:2053 [TROJAN]",
-      "server": "162.159.40.64",
-      "server_port": 2053,
+      "method": "aes-128-gcm",
       "password": "62bf77c8-8a36-482a-8112-165b527a874b",
-      "transport": {
-        "type": "ws",
-        "path": "/proxyip=82.26.198.89",
-        "headers": {
-          "Host": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev"
-        }
-      },
+      "plugin": "v2ray-plugin",
+      "plugin_opts": "mode=websocket;host=nova-falcon-bridge-152e.vpnsubpanel.workers.dev;path=/proxyip\\=82.26.198.89?enc\\=aes-128-gcm;tls",
       "tls": {
         "enabled": true,
-        "server_name": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev",
-        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -157,8 +128,42 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "سرویس رایگان نوا @irnova_proxy 8.39.125.77:2083 [SS]",
-      "server": "8.39.125.77",
+      "tag": "سرویس رایگان نوا @irnova_proxy 108.162.198.16:2053 [SS]",
+      "server": "108.162.198.16",
+      "server_port": 2053,
+      "method": "aes-128-gcm",
+      "password": "62bf77c8-8a36-482a-8112-165b527a874b",
+      "plugin": "v2ray-plugin",
+      "plugin_opts": "mode=websocket;host=nova-falcon-bridge-152e.vpnsubpanel.workers.dev;path=/proxyip\\=82.26.198.89?enc\\=aes-128-gcm;tls",
+      "tls": {
+        "enabled": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "سرویس رایگان نوا @irnova_proxy 162.159.46.32:2096 [SS]",
+      "server": "162.159.46.32",
+      "server_port": 2096,
+      "method": "aes-128-gcm",
+      "password": "62bf77c8-8a36-482a-8112-165b527a874b",
+      "plugin": "v2ray-plugin",
+      "plugin_opts": "mode=websocket;host=nova-falcon-bridge-152e.vpnsubpanel.workers.dev;path=/proxyip\\=82.26.198.89?enc\\=aes-128-gcm;tls",
+      "tls": {
+        "enabled": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "سرویس رایگان نوا @irnova_proxy 188.164.248.220:2083 [SS]",
+      "server": "188.164.248.220",
       "server_port": 2083,
       "method": "aes-128-gcm",
       "password": "62bf77c8-8a36-482a-8112-165b527a874b",
@@ -173,22 +178,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova_proxy 104.17.180.19:2053 [VLESS]",
-      "server": "104.17.180.19",
-      "server_port": 2053,
-      "uuid": "62bf77c8-8a36-482a-8112-165b527a874b",
-      "transport": {
-        "path": "/proxyip=82.26.198.89",
-        "type": "ws",
-        "headers": {
-          "Host": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev"
-        }
-      },
+      "type": "shadowsocks",
+      "tag": "سرویس رایگان نوا @irnova_proxy 108.162.198.126:8443 [SS]",
+      "server": "108.162.198.126",
+      "server_port": 8443,
+      "method": "aes-128-gcm",
+      "password": "62bf77c8-8a36-482a-8112-165b527a874b",
+      "plugin": "v2ray-plugin",
+      "plugin_opts": "mode=websocket;host=nova-falcon-bridge-152e.vpnsubpanel.workers.dev;path=/proxyip\\=82.26.198.89?enc\\=aes-128-gcm;tls",
       "tls": {
         "enabled": true,
-        "server_name": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev",
-        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -196,33 +195,163 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "سرویس رایگان نوا @irnova_proxy 104.26.3.212:2083 [TROJAN]",
-      "server": "104.26.3.212",
+      "type": "shadowsocks",
+      "tag": "سرویس رایگان نوا @irnova_proxy 104.17.223.64:443 [SS]",
+      "server": "104.17.223.64",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "62bf77c8-8a36-482a-8112-165b527a874b",
+      "plugin": "v2ray-plugin",
+      "plugin_opts": "mode=websocket;host=nova-falcon-bridge-152e.vpnsubpanel.workers.dev;path=/proxyip\\=82.26.198.89?enc\\=aes-128-gcm;tls",
+      "tls": {
+        "enabled": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "سرویس رایگان نوا @irnova_proxy 104.17.97.106:443 [SS]",
+      "server": "104.17.97.106",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "62bf77c8-8a36-482a-8112-165b527a874b",
+      "plugin": "v2ray-plugin",
+      "plugin_opts": "mode=websocket;host=nova-falcon-bridge-152e.vpnsubpanel.workers.dev;path=/proxyip\\=82.26.198.89?enc\\=aes-128-gcm;tls",
+      "tls": {
+        "enabled": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "سرویس رایگان نوا @irnova_proxy 198.41.209.105:443 [SS]",
+      "server": "198.41.209.105",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "62bf77c8-8a36-482a-8112-165b527a874b",
+      "plugin": "v2ray-plugin",
+      "plugin_opts": "mode=websocket;host=nova-falcon-bridge-152e.vpnsubpanel.workers.dev;path=/proxyip\\=82.26.198.89?enc\\=aes-128-gcm;tls",
+      "tls": {
+        "enabled": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "سرویس رایگان نوا @irnova_proxy 104.26.7.48:2096 [SS]",
+      "server": "104.26.7.48",
+      "server_port": 2096,
+      "method": "aes-128-gcm",
+      "password": "62bf77c8-8a36-482a-8112-165b527a874b",
+      "plugin": "v2ray-plugin",
+      "plugin_opts": "mode=websocket;host=nova-falcon-bridge-152e.vpnsubpanel.workers.dev;path=/proxyip\\=82.26.198.89?enc\\=aes-128-gcm;tls",
+      "tls": {
+        "enabled": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "سرویس رایگان نوا @irnova_proxy 172.67.67.170:2096 [SS]",
+      "server": "172.67.67.170",
+      "server_port": 2096,
+      "method": "aes-128-gcm",
+      "password": "62bf77c8-8a36-482a-8112-165b527a874b",
+      "plugin": "v2ray-plugin",
+      "plugin_opts": "mode=websocket;host=nova-falcon-bridge-152e.vpnsubpanel.workers.dev;path=/proxyip\\=82.26.198.89?enc\\=aes-128-gcm;tls",
+      "tls": {
+        "enabled": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "سرویس رایگان نوا @irnova_proxy 8.35.211.120:2053 [SS]",
+      "server": "8.35.211.120",
+      "server_port": 2053,
+      "method": "aes-128-gcm",
+      "password": "62bf77c8-8a36-482a-8112-165b527a874b",
+      "plugin": "v2ray-plugin",
+      "plugin_opts": "mode=websocket;host=nova-falcon-bridge-152e.vpnsubpanel.workers.dev;path=/proxyip\\=82.26.198.89?enc\\=aes-128-gcm;tls",
+      "tls": {
+        "enabled": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "سرویس رایگان نوا @irnova_proxy 162.159.38.94:2087 [SS]",
+      "server": "162.159.38.94",
+      "server_port": 2087,
+      "method": "aes-128-gcm",
+      "password": "62bf77c8-8a36-482a-8112-165b527a874b",
+      "plugin": "v2ray-plugin",
+      "plugin_opts": "mode=websocket;host=nova-falcon-bridge-152e.vpnsubpanel.workers.dev;path=/proxyip\\=82.26.198.89?enc\\=aes-128-gcm;tls",
+      "tls": {
+        "enabled": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "سرویس رایگان نوا @irnova_proxy 108.162.198.150:2053 [SS]",
+      "server": "108.162.198.150",
+      "server_port": 2053,
+      "method": "aes-128-gcm",
+      "password": "62bf77c8-8a36-482a-8112-165b527a874b",
+      "plugin": "v2ray-plugin",
+      "plugin_opts": "mode=websocket;host=nova-falcon-bridge-152e.vpnsubpanel.workers.dev;path=/proxyip\\=82.26.198.89?enc\\=aes-128-gcm;tls",
+      "tls": {
+        "enabled": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "سرویس رایگان نوا @irnova_proxy 104.26.3.197:2053 [SS]",
+      "server": "104.26.3.197",
+      "server_port": 2053,
+      "method": "aes-128-gcm",
+      "password": "62bf77c8-8a36-482a-8112-165b527a874b",
+      "plugin": "v2ray-plugin",
+      "plugin_opts": "mode=websocket;host=nova-falcon-bridge-152e.vpnsubpanel.workers.dev;path=/proxyip\\=82.26.198.89?enc\\=aes-128-gcm;tls",
+      "tls": {
+        "enabled": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "سرویس رایگان نوا @irnova_proxy 104.17.223.254:2083 [SS]",
+      "server": "104.17.223.254",
       "server_port": 2083,
-      "password": "62bf77c8-8a36-482a-8112-165b527a874b",
-      "transport": {
-        "type": "ws",
-        "path": "/proxyip=82.26.198.89",
-        "headers": {
-          "Host": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "سرویس رایگان نوا @irnova_proxy 8.35.211.174:8443 [SS]",
-      "server": "8.35.211.174",
-      "server_port": 8443,
       "method": "aes-128-gcm",
       "password": "62bf77c8-8a36-482a-8112-165b527a874b",
       "plugin": "v2ray-plugin",
@@ -236,55 +365,9 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova_proxy 162.159.38.108:2096 [VLESS]",
-      "server": "162.159.38.108",
-      "server_port": 2096,
-      "uuid": "62bf77c8-8a36-482a-8112-165b527a874b",
-      "transport": {
-        "path": "/proxyip=82.26.198.89",
-        "type": "ws",
-        "headers": {
-          "Host": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "سرویس رایگان نوا @irnova_proxy 104.16.249.40:443 [TROJAN]",
-      "server": "104.16.249.40",
-      "server_port": 443,
-      "password": "62bf77c8-8a36-482a-8112-165b527a874b",
-      "transport": {
-        "type": "ws",
-        "path": "/proxyip=82.26.198.89",
-        "headers": {
-          "Host": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "سرویس رایگان نوا @irnova_proxy 104.19.34.53:2053 [SS]",
-      "server": "104.19.34.53",
+      "tag": "سرویس رایگان نوا @irnova_proxy 104.19.50.87:2053 [SS]",
+      "server": "104.19.50.87",
       "server_port": 2053,
       "method": "aes-128-gcm",
       "password": "62bf77c8-8a36-482a-8112-165b527a874b",
@@ -299,171 +382,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova_proxy 162.159.39.139:8443 [VLESS]",
-      "server": "162.159.39.139",
-      "server_port": 8443,
-      "uuid": "62bf77c8-8a36-482a-8112-165b527a874b",
-      "transport": {
-        "path": "/proxyip=82.26.198.89",
-        "type": "ws",
-        "headers": {
-          "Host": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "سرویس رایگان نوا @irnova_proxy 104.19.147.136:2096 [TROJAN]",
-      "server": "104.19.147.136",
-      "server_port": 2096,
-      "password": "62bf77c8-8a36-482a-8112-165b527a874b",
-      "transport": {
-        "type": "ws",
-        "path": "/proxyip=82.26.198.89",
-        "headers": {
-          "Host": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "سرویس رایگان نوا @irnova_proxy 91.193.59.94:2053 [SS]",
-      "server": "91.193.59.94",
-      "server_port": 2053,
+      "tag": "سرویس رایگان نوا @irnova_proxy 162.159.38.117:2083 [SS]",
+      "server": "162.159.38.117",
+      "server_port": 2083,
       "method": "aes-128-gcm",
       "password": "62bf77c8-8a36-482a-8112-165b527a874b",
       "plugin": "v2ray-plugin",
       "plugin_opts": "mode=websocket;host=nova-falcon-bridge-152e.vpnsubpanel.workers.dev;path=/proxyip\\=82.26.198.89?enc\\=aes-128-gcm;tls",
       "tls": {
         "enabled": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova_proxy 104.17.190.166:2087 [VLESS]",
-      "server": "104.17.190.166",
-      "server_port": 2087,
-      "uuid": "62bf77c8-8a36-482a-8112-165b527a874b",
-      "transport": {
-        "path": "/proxyip=82.26.198.89",
-        "type": "ws",
-        "headers": {
-          "Host": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "سرویس رایگان نوا @irnova_proxy 91.193.59.4:8443 [TROJAN]",
-      "server": "91.193.59.4",
-      "server_port": 8443,
-      "password": "62bf77c8-8a36-482a-8112-165b527a874b",
-      "transport": {
-        "type": "ws",
-        "path": "/proxyip=82.26.198.89",
-        "headers": {
-          "Host": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "سرویس رایگان نوا @irnova_proxy 8.35.211.127:443 [SS]",
-      "server": "8.35.211.127",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "62bf77c8-8a36-482a-8112-165b527a874b",
-      "plugin": "v2ray-plugin",
-      "plugin_opts": "mode=websocket;host=nova-falcon-bridge-152e.vpnsubpanel.workers.dev;path=/proxyip\\=82.26.198.89?enc\\=aes-128-gcm;tls",
-      "tls": {
-        "enabled": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova_proxy 104.19.32.233:2087 [VLESS]",
-      "server": "104.19.32.233",
-      "server_port": 2087,
-      "uuid": "62bf77c8-8a36-482a-8112-165b527a874b",
-      "transport": {
-        "path": "/proxyip=82.26.198.89",
-        "type": "ws",
-        "headers": {
-          "Host": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "سرویس رایگان نوا @irnova_proxy 104.17.28.145:443 [TROJAN]",
-      "server": "104.17.28.145",
-      "server_port": 443,
-      "password": "62bf77c8-8a36-482a-8112-165b527a874b",
-      "transport": {
-        "type": "ws",
-        "path": "/proxyip=82.26.198.89",
-        "headers": {
-          "Host": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "nova-falcon-bridge-152e.vpnsubpanel.workers.dev",
-        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -480,46 +408,46 @@
         "🔯 故障转移",
         "🔮 负载均衡",
         "DIRECT",
-        "سرویس رایگان نوا @irnova_proxy nova-falcon-bridge-152e.vpnsubpanel.workers.dev:443 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 162.159.40.64:2053 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 8.39.125.77:2083 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 104.17.180.19:2053 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.26.3.212:2083 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 8.35.211.174:8443 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 162.159.38.108:2096 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.16.249.40:443 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 104.19.34.53:2053 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 162.159.39.139:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.19.147.136:2096 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 91.193.59.94:2053 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 104.17.190.166:2087 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 91.193.59.4:8443 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 8.35.211.127:443 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 104.19.32.233:2087 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.17.28.145:443 [TROJAN]"
+        "سرویس رایگان نوا @irnova_proxy nova-falcon-bridge-152e.vpnsubpanel.workers.dev:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 108.162.198.16:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 162.159.46.32:2096 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 188.164.248.220:2083 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 108.162.198.126:8443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.17.223.64:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.17.97.106:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 198.41.209.105:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.26.7.48:2096 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 172.67.67.170:2096 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 8.35.211.120:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 162.159.38.94:2087 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 108.162.198.150:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.26.3.197:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.17.223.254:2083 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.19.50.87:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 162.159.38.117:2083 [SS]"
       ]
     },
     {
       "type": "urltest",
       "tag": "♻️ 自动选择",
       "outbounds": [
-        "سرویس رایگان نوا @irnova_proxy nova-falcon-bridge-152e.vpnsubpanel.workers.dev:443 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 162.159.40.64:2053 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 8.39.125.77:2083 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 104.17.180.19:2053 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.26.3.212:2083 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 8.35.211.174:8443 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 162.159.38.108:2096 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.16.249.40:443 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 104.19.34.53:2053 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 162.159.39.139:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.19.147.136:2096 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 91.193.59.94:2053 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 104.17.190.166:2087 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 91.193.59.4:8443 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 8.35.211.127:443 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 104.19.32.233:2087 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.17.28.145:443 [TROJAN]"
+        "سرویس رایگان نوا @irnova_proxy nova-falcon-bridge-152e.vpnsubpanel.workers.dev:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 108.162.198.16:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 162.159.46.32:2096 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 188.164.248.220:2083 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 108.162.198.126:8443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.17.223.64:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.17.97.106:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 198.41.209.105:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.26.7.48:2096 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 172.67.67.170:2096 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 8.35.211.120:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 162.159.38.94:2087 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 108.162.198.150:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.26.3.197:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.17.223.254:2083 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.19.50.87:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 162.159.38.117:2083 [SS]"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "5m",
@@ -529,46 +457,46 @@
       "type": "urltest",
       "tag": "🔯 故障转移",
       "outbounds": [
-        "سرویس رایگان نوا @irnova_proxy nova-falcon-bridge-152e.vpnsubpanel.workers.dev:443 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 162.159.40.64:2053 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 8.39.125.77:2083 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 104.17.180.19:2053 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.26.3.212:2083 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 8.35.211.174:8443 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 162.159.38.108:2096 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.16.249.40:443 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 104.19.34.53:2053 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 162.159.39.139:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.19.147.136:2096 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 91.193.59.94:2053 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 104.17.190.166:2087 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 91.193.59.4:8443 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 8.35.211.127:443 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 104.19.32.233:2087 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.17.28.145:443 [TROJAN]"
+        "سرویس رایگان نوا @irnova_proxy nova-falcon-bridge-152e.vpnsubpanel.workers.dev:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 108.162.198.16:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 162.159.46.32:2096 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 188.164.248.220:2083 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 108.162.198.126:8443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.17.223.64:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.17.97.106:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 198.41.209.105:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.26.7.48:2096 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 172.67.67.170:2096 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 8.35.211.120:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 162.159.38.94:2087 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 108.162.198.150:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.26.3.197:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.17.223.254:2083 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.19.50.87:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 162.159.38.117:2083 [SS]"
       ]
     },
     {
       "type": "urltest",
       "tag": "🔮 负载均衡",
       "outbounds": [
-        "سرویس رایگان نوا @irnova_proxy nova-falcon-bridge-152e.vpnsubpanel.workers.dev:443 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 162.159.40.64:2053 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 8.39.125.77:2083 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 104.17.180.19:2053 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.26.3.212:2083 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 8.35.211.174:8443 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 162.159.38.108:2096 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.16.249.40:443 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 104.19.34.53:2053 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 162.159.39.139:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.19.147.136:2096 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 91.193.59.94:2053 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 104.17.190.166:2087 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 91.193.59.4:8443 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 8.35.211.127:443 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 104.19.32.233:2087 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.17.28.145:443 [TROJAN]"
+        "سرویس رایگان نوا @irnova_proxy nova-falcon-bridge-152e.vpnsubpanel.workers.dev:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 108.162.198.16:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 162.159.46.32:2096 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 188.164.248.220:2083 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 108.162.198.126:8443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.17.223.64:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.17.97.106:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 198.41.209.105:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.26.7.48:2096 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 172.67.67.170:2096 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 8.35.211.120:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 162.159.38.94:2087 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 108.162.198.150:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.26.3.197:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.17.223.254:2083 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.19.50.87:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 162.159.38.117:2083 [SS]"
       ]
     },
     {
@@ -603,23 +531,23 @@
         "♻️ 自动选择",
         "🔯 故障转移",
         "🔮 负载均衡",
-        "سرویس رایگان نوا @irnova_proxy nova-falcon-bridge-152e.vpnsubpanel.workers.dev:443 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 162.159.40.64:2053 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 8.39.125.77:2083 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 104.17.180.19:2053 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.26.3.212:2083 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 8.35.211.174:8443 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 162.159.38.108:2096 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.16.249.40:443 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 104.19.34.53:2053 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 162.159.39.139:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.19.147.136:2096 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 91.193.59.94:2053 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 104.17.190.166:2087 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 91.193.59.4:8443 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 8.35.211.127:443 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 104.19.32.233:2087 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.17.28.145:443 [TROJAN]"
+        "سرویس رایگان نوا @irnova_proxy nova-falcon-bridge-152e.vpnsubpanel.workers.dev:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 108.162.198.16:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 162.159.46.32:2096 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 188.164.248.220:2083 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 108.162.198.126:8443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.17.223.64:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.17.97.106:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 198.41.209.105:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.26.7.48:2096 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 172.67.67.170:2096 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 8.35.211.120:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 162.159.38.94:2087 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 108.162.198.150:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.26.3.197:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.17.223.254:2083 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.19.50.87:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 162.159.38.117:2083 [SS]"
       ]
     },
     {
@@ -634,23 +562,23 @@
         "♻️ 自动选择",
         "🔯 故障转移",
         "🔮 负载均衡",
-        "سرویس رایگان نوا @irnova_proxy nova-falcon-bridge-152e.vpnsubpanel.workers.dev:443 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 162.159.40.64:2053 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 8.39.125.77:2083 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 104.17.180.19:2053 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.26.3.212:2083 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 8.35.211.174:8443 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 162.159.38.108:2096 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.16.249.40:443 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 104.19.34.53:2053 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 162.159.39.139:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.19.147.136:2096 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 91.193.59.94:2053 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 104.17.190.166:2087 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 91.193.59.4:8443 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 8.35.211.127:443 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 104.19.32.233:2087 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.17.28.145:443 [TROJAN]"
+        "سرویس رایگان نوا @irnova_proxy nova-falcon-bridge-152e.vpnsubpanel.workers.dev:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 108.162.198.16:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 162.159.46.32:2096 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 188.164.248.220:2083 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 108.162.198.126:8443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.17.223.64:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.17.97.106:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 198.41.209.105:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.26.7.48:2096 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 172.67.67.170:2096 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 8.35.211.120:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 162.159.38.94:2087 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 108.162.198.150:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.26.3.197:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.17.223.254:2083 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.19.50.87:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 162.159.38.117:2083 [SS]"
       ]
     },
     {
@@ -660,23 +588,23 @@
         "📢 https://t.me/irnova_proxy",
         "📊 0.00GB / 9999GB (0%)  |  📅 2099-01-01",
         "DIRECT",
-        "سرویس رایگان نوا @irnova_proxy nova-falcon-bridge-152e.vpnsubpanel.workers.dev:443 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 162.159.40.64:2053 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 8.39.125.77:2083 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 104.17.180.19:2053 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.26.3.212:2083 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 8.35.211.174:8443 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 162.159.38.108:2096 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.16.249.40:443 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 104.19.34.53:2053 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 162.159.39.139:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.19.147.136:2096 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 91.193.59.94:2053 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 104.17.190.166:2087 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 91.193.59.4:8443 [TROJAN]",
-        "سرویس رایگان نوا @irnova_proxy 8.35.211.127:443 [SS]",
-        "سرویس رایگان نوا @irnova_proxy 104.19.32.233:2087 [VLESS]",
-        "سرویس رایگان نوا @irnova_proxy 104.17.28.145:443 [TROJAN]"
+        "سرویس رایگان نوا @irnova_proxy nova-falcon-bridge-152e.vpnsubpanel.workers.dev:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 108.162.198.16:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 162.159.46.32:2096 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 188.164.248.220:2083 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 108.162.198.126:8443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.17.223.64:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.17.97.106:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 198.41.209.105:443 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.26.7.48:2096 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 172.67.67.170:2096 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 8.35.211.120:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 162.159.38.94:2087 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 108.162.198.150:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.26.3.197:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.17.223.254:2083 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 104.19.50.87:2053 [SS]",
+        "سرویس رایگان نوا @irnova_proxy 162.159.38.117:2083 [SS]"
       ]
     },
     {
